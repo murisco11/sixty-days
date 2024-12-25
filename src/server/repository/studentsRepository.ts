@@ -1,0 +1,12 @@
+/*
+CREATE TABLE IF NOT EXISTS students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+	user_id INT NOT NULL,
+    classroom_id INT NOT NULL,
+    study_time INT NOT NULL,
+    last_updated DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, 
+    
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (classroom_id) REFERENCES classroom(id) ON DELETE CASCADE
+)
+*/
